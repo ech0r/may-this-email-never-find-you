@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://rx1sbr5x8du8"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_gy3yg"]
+size = Vector3(6, 4, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_06ad8"]
+size = Vector3(6, 4, 8)
+
+[node name="Cabin" type="StaticBody3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_gy3yg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_06ad8")
+debug_color = Color(0.788666, 0.388849, 0.493229, 0.42)

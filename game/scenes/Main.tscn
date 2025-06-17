@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://cw0eh2n22oglw"]
+
+[ext_resource type="PackedScene" uid="uid://djwadffpmox60" path="res://scenes/Player.tscn" id="1_elqb8"]
+[ext_resource type="PackedScene" uid="uid://rx1sbr5x8du8" path="res://scenes/Cabin.tscn" id="2_0bbpv"]
+[ext_resource type="PackedScene" uid="uid://cn456t8rv4afe" path="res://scenes/Tree.tscn" id="3_rarhs"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_0bbpv"]
+size = Vector2(100, 100)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0bbpv"]
+albedo_color = Color(0.188535, 0.38746, 0, 1)
+
+[node name="Main" type="Node3D"]
+
+[node name="Node3D" type="Node3D" parent="."]
+
+[node name="Ground" type="MeshInstance3D" parent="Node3D"]
+mesh = SubResource("PlaneMesh_0bbpv")
+surface_material_override/0 = SubResource("StandardMaterial3D_0bbpv")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Node3D"]
+
+[node name="Player" parent="Node3D" instance=ExtResource("1_elqb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.10286, 0, 0)
+
+[node name="Cabin" parent="Node3D" instance=ExtResource("2_0bbpv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.26308, 0, 0)
+
+[node name="Tree" parent="Node3D" instance=ExtResource("3_rarhs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -11.3902)
