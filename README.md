@@ -11,11 +11,11 @@ You start off with a minimal set of basic gear and set out to build your homeste
 Gameplay:
 	The purpose of the game is to survive and expand your homestead, gaining skills and new gear to help you survive and thrive in your new wildnerness home
 	You start off with a set of basic gear:
-		+ Single-shot break-barrel shotgun
-		+ Medium-action Fishing Rod
-		+ Axe
-		+ Hand Saw
-		+ Kayak
+		- Single-shot break-barrel shotgun
+		- Medium-action Fishing Rod
+		- Axe
+		- Hand Saw
+		- Kayak
 		
 
 Gear:
